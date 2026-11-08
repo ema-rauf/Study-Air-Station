@@ -17,7 +17,6 @@ An ESP32 reads two sensors:
 
 From these it computes a 0 to 100 score and a state (fine, stuffy, alert). The score drives an RGB LED and a bar on the 2.0 inch ST7789 display. The display has three pages, switched with the page button: live values, a 24 hour CO2 graph, and system info.
 
-![Display](images/display.png)
 
 Layout preview of the three alert states, drawn by the firmware's display code with sample values.
 
