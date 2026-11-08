@@ -1,2 +1,26 @@
-Item,Qty,Supplier,Cost/item,Total Cost,link
-Estimated total shipping,1,,,$0.00,
+Item,Purpose,Qty,Unit price (USD),Total (USD),Link
+ESP32 DevKit V1 (30 pin),"Main controller, WiFi",1,6.00,6.00,https://www.aliexpress.com/w/wholesale-ESP32-DevKit-V1-30-pin.html
+SCD40 CO2 sensor module,"CO2, temperature, humidity over I2C",1,20.00,20.00,https://www.aliexpress.com/w/wholesale-SCD40-CO2-sensor-module.html
+PMS5003 particle sensor,"PM1.0, PM2.5, PM10 over UART",1,18.00,18.00,https://www.aliexpress.com/w/wholesale-PMS5003-sensor.html
+2.0 inch ST7789 TFT 240x320,"SPI display, 8 pin module",1,6.00,6.00,https://www.aliexpress.com/w/wholesale-2.0-inch-ST7789-TFT-SPI-240x320.html
+microSD SPI module,Data logging,1,1.50,1.50,https://www.aliexpress.com/w/wholesale-micro-SD-card-SPI-module-6-pin.html
+microSD card 8 GB,Log storage,1,4.00,4.00,https://www.aliexpress.com/w/wholesale-microSD-card-8GB.html
+5V fan 25x25x10 mm,"Room air exchange, switched by Q1",1,2.50,2.50,https://www.aliexpress.com/w/wholesale-5V-fan-2510.html
+IRLZ44N MOSFET,Fan low side switch,1,1.00,1.00,https://www.aliexpress.com/w/wholesale-IRLZ44N.html
+1N5819 Schottky diode,Input reverse protection and fan flyback,2,0.20,0.40,https://www.aliexpress.com/w/wholesale-1N5819.html
+470 uF 10 V electrolytic capacitor,5 V rail bulk capacitor,1,0.30,0.30,https://www.aliexpress.com/w/wholesale-470uF-10V-capacitor.html
+100 nF ceramic capacitor,Decoupling,3,0.10,0.30,https://www.aliexpress.com/w/wholesale-100nF-ceramic-capacitor.html
+"Resistor kit (100R, 220R x3, 10k x3)","Gate, LED and pull-up resistors",1,1.00,1.00,https://www.aliexpress.com/w/wholesale-resistor-assortment-kit-1/4W.html
+"5 mm RGB LED, common cathode",Status light,1,0.50,0.50,https://www.aliexpress.com/w/wholesale-5mm-RGB-LED-common-cathode.html
+Active buzzer 12 mm,Alert tone,1,0.80,0.80,https://www.aliexpress.com/w/wholesale-active-buzzer-12mm-5V.html
+Tactile switch 6x6x13 mm,Silence and page buttons,2,0.30,0.60,https://www.aliexpress.com/w/wholesale-tactile-switch-6x6x13mm.html
+Screw terminal 2 pin 5.08 mm,5 V input and fan connection,2,0.50,1.00,https://www.aliexpress.com/w/wholesale-screw-terminal-block-5.08mm-2-pin.html
+Pin header and socket kit,"Sockets for ESP32, SCD40, SD, headers for display and PMS5003",1,1.50,1.50,https://www.aliexpress.com/w/wholesale-female-pin-header-2.54mm-kit.html
+"Dupont jumper wires F-F 20 cm, 40 pcs","Cables for the display, SCD40, microSD module and PMS5003",1,1.50,1.50,https://www.aliexpress.com/w/wholesale-dupont-jumper-wire-female-female-20cm.html
+M3 screw and standoff set,"PCB, fan and lid hardware",1,1.50,1.50,https://www.aliexpress.com/w/wholesale-M3-screw-standoff-assortment.html
+5V 2A power adapter with bare wire lead,Supply for the 5 V input terminal,1,4.00,4.00,https://www.aliexpress.com/w/wholesale-5V-2A-power-adapter.html
+"PCB, 5 pcs, 100x80 mm 2 layer","JLCPCB, minimum order is 5",1,5.00,5.00,https://jlcpcb.com/
+"3D printed case, base and lid (about 120 g)","JLC3DP, from cad/air_station_case.step",1,11.00,11.00,https://jlc3dp.com/
+"Delivery, AliExpress parts",Estimate,1,2.50,2.50,https://www.aliexpress.com/
+"Delivery, JLCPCB PCB and 3D print","Estimate, one combined order",1,6.00,6.00,https://jlcpcb.com/
+"Total, delivery included",,,,96.90,
