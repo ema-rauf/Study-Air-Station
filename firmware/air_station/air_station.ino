@@ -81,6 +81,15 @@ struct Reading {
 enum Level { LV_OK = 0, LV_WARN = 1, LV_ALERT = 2 };
 Level co2Level = LV_OK, pmLevel = LV_OK, level = LV_OK;
 
+struct Button {
+  int pin;
+  bool down;
+  bool longDone;
+  unsigned long since;
+  Button(int p) : pin(p), down(false), longDone(false), since(0) {}
+};
+Button btnSilence(PIN_BTN_SILENCE), btnPage(PIN_BTN_PAGE);
+
 bool fanOn = false;
 unsigned long fanChangedAt = 0;
 unsigned long silencedAt = 0;
@@ -718,15 +727,6 @@ void displayTick() {
 }
 
 // ---------------------------------------------------------------- buttons
-struct Button {
-  int pin;
-  bool down;
-  bool longDone;
-  unsigned long since;
-  Button(int p) : pin(p), down(false), longDone(false), since(0) {}
-};
-Button btnSilence(PIN_BTN_SILENCE), btnPage(PIN_BTN_PAGE);
-
 // returns 1 on a short press (on release) and 2 once a long press passes 1.2 s
 int buttonPoll(Button &b) {
   bool pressed = digitalRead(b.pin) == LOW;
