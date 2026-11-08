@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 5 | Tier 3 | 18h | 5 |
+| Week 5 | Tier 3 | 19h | 5 |
 
 ## Contents
 
@@ -86,7 +86,7 @@ Designed the enclosure from scratch in CadQuery as a two-part case: a base that 
 
 ### 2026-11-08: Wrote the full firmware for the ESP32 as one Arduino sketch. I wrote a raw I2C driver for the SCD40 (stop, set offset and altitude, start, ready check, read) with the Sensirion CRC8 check, and a PMS50
 
-**4h**
+**5h**
 
 Wrote the full firmware for the ESP32 as one Arduino sketch. I wrote a raw I2C driver for the SCD40 (stop, set offset and altitude, start, ready check, read) with the Sensirion CRC8 check, and a PMS5003 frame parser that reads the 32-byte UART frame, checks the sum and resyncs after stray bytes. Air quality is classified with hysteresis, so a state is entered at the threshold and left at 90 percent of it. The fan switches on at 1000 ppm CO2 or 25 ug/m3 PM2.5 with a 60 s minimum dwell, and the buzzer beeps every 30 s in alert. The silence button mutes it for 10 minutes, the page button changes the display screen, and a long press changes the fan mode. The TFT shows the live readings and a 24 hour history graph. I added a minute-by-minute CSV log on the microSD card, NTP time, Telegram alerts with a repeat and a recovery message, and a password-protected web dashboard. Thresholds and fan mode are stored in flash, so they survive a reboot. Compiled it in Arduino IDE for the ESP32 Dev Module: 88 percent of program storage and 15 percent of RAM. Fixed one build error where the button struct had to be declared before the functions that use it.
 
@@ -97,6 +97,8 @@ Wrote the full firmware for the ESP32 as one Arduino sketch. I wrote a raw I2C d
 ![Screenshot From 2026-11-08 23-37-51](https://halflife.hackclub-assets.com/sessions/Qgzhw9aCgZjWjX8UQ5PRuQQlkE5Sf2EF/57d54f89e6223921c42ca383f9895de19e4bac1647272f46f3a347dc4f4805ba.png)
 
 ![Screenshot From 2026-11-08 23-33-26](https://halflife.hackclub-assets.com/sessions/Qgzhw9aCgZjWjX8UQ5PRuQQlkE5Sf2EF/fafb2c84637dd706b63af6f7409b62c88fe039148c13b581b45d7729e0e02942.png)
+
+![Screenshot From 2026-11-09 01-20-48](https://halflife.hackclub-assets.com/sessions/Qgzhw9aCgZjWjX8UQ5PRuQQlkE5Sf2EF/3e4ee4a0ef19337fde414393e1f117a65b56dd84a9e81a0b6ca0d5c79661a7c0.png)
 
 ### 2026-11-08: Set up a full simulation of the Study Air Station in Wokwi so the firmware could run before the hardware is built. I wired the ESP32 DevKit to a TFT, microSD card, buzzer, RGB LED, a fan indicator LED
 
