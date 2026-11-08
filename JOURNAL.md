@@ -10,7 +10,7 @@
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 5 | Tier 3 | 16h | 5 |
+| Week 5 | Tier 3 | 17h | 5 |
 
 ## Contents
 
@@ -24,7 +24,7 @@
 
 ### 2026-11-08: I spent this session on the schematic in KiCad, starting from the Schematik desk air quality monitor as a reference. I kept the idea and redrew everything with my own pin choices.
 
-**3h**
+**4h**
 
 I spent this session on the schematic in KiCad, starting from the Schematik desk air quality monitor as a reference. I kept the idea and redrew everything with my own pin choices.
 
@@ -45,6 +45,8 @@ Sensor and SD headers
 ![schematic-2-esp32-and-display](https://halflife.hackclub-assets.com/sessions/Qgzhw9aCgZjWjX8UQ5PRuQQlkE5Sf2EF/7e8f64dffdc0e9f193d58964b97a916f3e6bf36acb3ceeb7b57cc1242377d0d8.png)
 
 ![schematic-1-power-and-fan](https://halflife.hackclub-assets.com/sessions/Qgzhw9aCgZjWjX8UQ5PRuQQlkE5Sf2EF/6f7737c8c7c08e6f3b7af767709950309e5efe918d1047202300f466eace36a3.png)
+
+![Screenshot From 2026-11-09 01-18-10](https://halflife.hackclub-assets.com/sessions/Qgzhw9aCgZjWjX8UQ5PRuQQlkE5Sf2EF/d5482ed60efd931afd318e791e4a52b961378dabfc61dbd48308e4ad834bde93.png)
 
 ### 2026-11-08: I laid out the PCB for the air station in KiCad. The board is 100 x 80 mm, two layers, with a ground pour on both sides.
 
