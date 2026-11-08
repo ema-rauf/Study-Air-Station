@@ -31,6 +31,12 @@ Two layer board, 100 x 80 mm. The ESP32 DevKit plugs into sockets. The SCD40, di
 
 ![Schematic](images/schematic.png)
 
+![PCB routing](images/pcb-routing.png)
+
+![PCB side view](images/pcb-3d-sideview.png)
+
+![PCB back](images/pcb-back-3dview.png)
+
 | Function | ESP32 pin |
 | --- | --- |
 | SCD40 SDA / SCL | IO21 / IO22 |
