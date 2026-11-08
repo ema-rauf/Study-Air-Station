@@ -63,21 +63,6 @@ Buttons: silence short press mutes or unmutes. Page short press changes the page
 
 Telegram alerts use HTTPS without certificate checking, so keep the bot token to a bot used only for this. The dashboard uses plain HTTP and basic authentication, so use it on a trusted network only.
 
-## Build notes
-
-Match these to your own parts:
-
-- **ESP32 DevKit.** The footprint assumes the two pin rows are 22.86 mm apart, center to center. Measure your module.
-- **Module pin order.** The SCD40, display and microSD module pinouts differ between sellers. The board silkscreen and the schematic list the order I used. Match them to your modules before soldering.
-- **PMS5003.** Its connector is 1.27 mm pitch. Cut a cable and wire it to J3 as 5V, GND, TX, RX in the order printed on the board.
-- **RGB LED.** Common cathode, with the long leg in position 2.
-- **Case.** The sizes of the display, fan, PMS5003, SCD40 and microSD module are taken from typical datasheets and listings. Compare them with your parts before a full print, and check the SD card slot position against your module.
-- **Prices.** The BOM lists estimated prices. Check them before ordering.
-
-## Cost
-
-About 97 USD with delivery, see `BOM.csv`.
-
 ## Files
 
 - `hardware/` KiCad project (schematic, PCB, project libraries)
@@ -85,7 +70,3 @@ About 97 USD with delivery, see `BOM.csv`.
 - `cad/` case, STEP
 - `BOM.csv` parts, prices, links
 - `images/` renders
-
-## Credits
-
-The idea started from the desk air quality monitor project on Schematik. I rebuilt the circuit in KiCad with my own pin choices, drew the board and the case, and wrote new firmware.
