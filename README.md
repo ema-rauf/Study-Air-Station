@@ -49,24 +49,6 @@ Two layer board, 100 x 80 mm. The ESP32 DevKit plugs into sockets. The SCD40, di
 | RGB LED R, G, B | IO19, IO18, IO5 |
 | Silence button, page button | IO36, IO39 (10k pull-ups on the board) |
 
-## Case
-
-`cad/air_station_case.step` holds a base, a lid and two button caps. The PCB sits on four standoffs on the left. The bay on the right holds the PMS5003 on the floor, the microSD module and the SCD40 standing on their edges in rib slots, and a 25 mm fan on the back wall. The base has a USB opening, a cable opening for the 5 V input, intake slots, an SD card slot in the east wall and air slots for the SCD40. The lid has the display window above the bay and two button holes with printed caps. It takes about 120 g of filament.
-
-![Case](images/case.png)
-
-## Firmware
-
-`firmware/air_station/air_station.ino`, built with the Arduino IDE.
-
-1. Install the ESP32 board package (board: ESP32 Dev Module).
-2. Install the libraries Adafruit GFX Library and Adafruit ST7789 Library.
-3. Edit the settings block at the top: WiFi name and password, dashboard password, Telegram bot token and chat id (optional), time zone.
-4. Flash. The dashboard stays off until the default dashboard password is changed.
-
-Buttons: silence short press mutes or unmutes. Page short press changes the page, long press cycles the fan mode.
-
-Telegram alerts use HTTPS without certificate checking, so keep the bot token to a bot used only for this. The dashboard uses plain HTTP and basic authentication, so use it on a trusted network only.
 
 ## Files
 
